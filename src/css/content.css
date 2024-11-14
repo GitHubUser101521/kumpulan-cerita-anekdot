@@ -1,0 +1,135 @@
+.container {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: relative;
+}
+
+.article-card {
+    min-height: fit-content;
+    height: 300px;
+    padding: 2rem;
+    border: solid 2px rgba(162, 40, 40, 0.75);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.5s ease-out;
+}
+.article-card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.5s ease-out;
+    background-color: #ffefe6;
+}
+
+.article-image {
+    width: 100%;
+    display: block;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 175, 105);
+    border-radius: 10px;
+    border: solid 2px #F95454;
+}
+
+.article-card .title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.article-card .tags {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-card .tag-div {
+    display: flex;
+    gap: 10px;
+}
+
+.article-card .tag-name {
+    display: inline;
+    background-color: rgba(250, 129, 47, .50);
+    padding: 5px 10px;
+    border: solid 2px #F95454;
+    border-radius: 10px;
+    color: #F95454;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: fit-content;
+}
+
+.mark-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.story-popup {
+    height: 70%;
+    width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 5px #F95454;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    padding: 1rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.story-popup button {
+    position: absolute;
+    right: 2rem;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+    padding: unset;
+    color: #F95454;
+}
+
+.popup-open {
+    filter: blur(10px) grayscale(100%);
+    pointer-events: none;
+}
+
+.story-title {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #d73434;
+}
+
+.story-title::after {
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 2px;
+    background-color: #d73434;
+    margin: 10px auto 0; 
+    border-radius: 20px;
+}
+
+.story-content {
+    padding: 5rem;
+    color: #912121;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    text-align: justify;
+    overflow-y: auto;
+}

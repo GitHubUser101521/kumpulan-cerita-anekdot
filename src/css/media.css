@@ -1,0 +1,35 @@
+/* @media screen and (min-width: 1255px) {
+    .article-card .title {
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+} */
+
+@media screen and (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+        margin: 3rem;
+    }
+
+    .story-popup {
+        height: 90%;
+        width: 80%;
+    }
+
+    .story-content {
+        padding: 1rem;
+        margin-top: 20px;
+    }
+
+    .story-popup button {
+        top: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}

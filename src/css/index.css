@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: unset;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+html {
+  background-color: whitesmoke;
+  max-width: 1536px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button:hover {
+  cursor: pointer;
+}

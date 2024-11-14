@@ -1,0 +1,22 @@
+header {
+    background: linear-gradient(to right, #FF4545, #FA812F, #F95454);
+    margin: 2rem;
+    padding: 4rem 3rem;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px 0 #7b7b7b;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: whitesmoke;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    opacity: .85;
+    letter-spacing: 3px;
+    text-align: center;
+}
