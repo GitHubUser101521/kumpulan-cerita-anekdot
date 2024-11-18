@@ -133,7 +133,6 @@ function Content() {
     setPopupVisibility(false)
   }
  
-  console.log(storyArr[openedStory].title)
   return (
     <>
     <div className={`${isPopupVisible ? 'popup-open' : ''}`}></div>
