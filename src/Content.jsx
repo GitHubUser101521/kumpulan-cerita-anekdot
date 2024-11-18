@@ -135,8 +135,8 @@ function Content() {
  
   return (
     <>
-    <div className={`${isPopupVisible ? 'popup-open' : ''}`}></div>
     <div>
+      <div className={`${isPopupVisible ? 'popup-open' : ''}`}></div>
       <Header />
       <div className='container'>
         {storyArr.map((article, index) => (

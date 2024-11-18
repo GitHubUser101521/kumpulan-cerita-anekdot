@@ -4,7 +4,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     position: relative;
-    z-index: -1;
 }
 
 .article-card {
@@ -90,6 +89,7 @@
     padding: 1rem 2rem 2rem;
     display: flex;
     flex-direction: column;
+    z-index: 2000;
 }
 
 .story-popup button {
@@ -106,11 +106,12 @@
     width: 100vw;
     height: 100vh;
     background-color: black;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    filter: opacity(60%);
+    opacity: .7;
     pointer-events: none;
+    z-index: 500;
 }
 
 .story-title {
