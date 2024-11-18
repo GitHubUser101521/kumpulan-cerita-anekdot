@@ -4,6 +4,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     position: relative;
+    z-index: -1;
 }
 
 .article-card {
@@ -102,7 +103,13 @@
 }
 
 .popup-open {
-    filter: blur(10px) grayscale(100%);
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: opacity(60%);
     pointer-events: none;
 }
 

@@ -136,7 +136,8 @@ function Content() {
   console.log(storyArr[openedStory].title)
   return (
     <>
-    <div className={`${isPopupVisible ? 'popup-open' : ''}`}>
+    <div className={`${isPopupVisible ? 'popup-open' : ''}`}></div>
+    <div>
       <Header />
       <div className='container'>
         {storyArr.map((article, index) => (
