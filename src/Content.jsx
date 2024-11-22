@@ -143,7 +143,7 @@ function Content() {
           <div className="article-card" key={index}>
             {/* Put an image so its more interesting */}
             <div onClick={() => openStory(index)}>
-              <div className='article-image'>Placeholder</div>
+              <div className='article-image'>Klik disini untuk lihat ceritanya!</div>
               <p className="title">{article.title}</p>
             </div>
             <div className="tags">
@@ -167,7 +167,7 @@ function Content() {
             <p className="story-title">{storyArr[openedStory].title}</p>
           </div>
           
-          <p className='story-content'>{initialStoryArr[openedStory].story}</p>
+          <p className='story-content'>{storyArr[openedStory].story}</p>
         </div>
       }
     </>

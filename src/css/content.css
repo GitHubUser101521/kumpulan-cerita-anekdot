@@ -141,3 +141,9 @@
     text-align: justify;
     overflow-y: auto;
 }
+
+.next-btn {
+    img {
+        rotate: -90deg;
+    }
+}
