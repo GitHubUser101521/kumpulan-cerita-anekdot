@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './css/content.css'
 import './css/media.css'
 import Header from './Header.jsx'
+import Footer from './Footer.jsx'
 
 const initialStoryArr = [
   {
@@ -97,8 +98,6 @@ const initialStoryArr = [
 ];
 
 function Content() {
-
-
   const [storyArr, setStoryArr] = useState(() => {  
     const storedStoryArr = localStorage.getItem('storyArr');  
     return storedStoryArr ? JSON.parse(storedStoryArr) : initialStoryArr;  
@@ -141,7 +140,6 @@ function Content() {
       <div className='container'>
         {storyArr.map((article, index) => (
           <div className="article-card" key={index}>
-            {/* Put an image so its more interesting */}
             <div onClick={() => openStory(index)}>
               <div className='article-image'>Klik disini untuk lihat ceritanya!</div>
               <p className="title">{article.title}</p>
@@ -170,6 +168,8 @@ function Content() {
           <p className='story-content'>{storyArr[openedStory].story}</p>
         </div>
       }
+
+    <Footer />
     </>
   )
 }
